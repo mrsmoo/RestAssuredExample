@@ -1,10 +1,10 @@
 package com.reind;
 
-import com.jayway.restassured.response.Response;
+import io.restassured.response.Response;
 
 import java.net.MalformedURLException;
 
-import static com.jayway.restassured.RestAssured.given;
+import static io.restassured.RestAssured.given;
 
 /**
  * Simple Configuration Files which can be extended in future

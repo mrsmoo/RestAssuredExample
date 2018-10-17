@@ -1,11 +1,9 @@
 package com.reind;
 
 
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
-import com.jayway.restassured.response.Response;
+import io.restassured.response.Response;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -26,7 +24,6 @@ public class MarshallResponse {
         configuration = new Configuration();
         objectMapper = new ObjectMapper();
         objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-        objectMapper.setVisibilityChecker(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
     }
 
     @Test

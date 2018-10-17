@@ -8,38 +8,39 @@
     <artifactId>RestAssuredExample</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
-            <groupId>com.jayway.restassured</groupId>
+            <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>2.9.0</version>
+            <version>3.1.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.jayway.restassured/json-path -->
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
         <dependency>
-            <groupId>com.jayway.restassured</groupId>
+            <groupId>io.rest-assured</groupId>
             <artifactId>json-path</artifactId>
-            <version>2.9.0</version>
+            <version>3.1.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.jayway.restassured/json-schema-validator -->
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator -->
         <dependency>
-            <groupId>com.jayway.restassured</groupId>
+            <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>2.9.0</version>
+            <version>3.1.1</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+        <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.7</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-         <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-databind</artifactId>
-        <version>2.8.1</version>
-    </dependency>
     </dependencies>
 </project>

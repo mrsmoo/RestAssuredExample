@@ -3,13 +3,17 @@ package com.reind;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-//@JsonIgnoreProperties(ignoreUnknown = true)
-public class MovieResponse {
+public class MovieResponse
+{
     private String Released;
+
+    private String Website;
 
     private String Type;
 
     private String imdbVotes;
+
+    private Ratings[] Ratings;
 
     private String Runtime;
 
@@ -21,7 +25,11 @@ public class MovieResponse {
 
     private String Country;
 
+    private String BoxOffice;
+
     private String Title;
+
+    private String DVD;
 
     private String imdbRating;
 
@@ -37,6 +45,8 @@ public class MovieResponse {
 
     private String Writer;
 
+    private String Production;
+
     private String Genre;
 
     private String Language;
@@ -45,163 +55,259 @@ public class MovieResponse {
 
     private String Director;
 
-    public String getReleased() {
+    public String getReleased ()
+    {
         return Released;
     }
 
-    public void setReleased(String Released) {
+    public void setReleased (String Released)
+    {
         this.Released = Released;
     }
 
-    public String getType() {
+    public String getWebsite ()
+    {
+        return Website;
+    }
+
+    public void setWebsite (String Website)
+    {
+        this.Website = Website;
+    }
+
+    public String getType ()
+    {
         return Type;
     }
 
-    public void setType(String Type) {
+    public void setType (String Type)
+    {
         this.Type = Type;
     }
 
-    public String getImdbVotes() {
+    public String getImdbVotes ()
+    {
         return imdbVotes;
     }
 
-    public void setImdbVotes(String imdbVotes) {
+    public void setImdbVotes (String imdbVotes)
+    {
         this.imdbVotes = imdbVotes;
     }
 
-    public String getRuntime() {
+    public Ratings[] getRatings ()
+    {
+        return Ratings;
+    }
+
+    public void setRatings (Ratings[] Ratings)
+    {
+        this.Ratings = Ratings;
+    }
+
+    public String getRuntime ()
+    {
         return Runtime;
     }
 
-    public void setRuntime(String Runtime) {
+    public void setRuntime (String Runtime)
+    {
         this.Runtime = Runtime;
     }
 
-    public String getResponse() {
+    public String getResponse ()
+    {
         return Response;
     }
 
-    public void setResponse(String Response) {
+    public void setResponse (String Response)
+    {
         this.Response = Response;
     }
 
-    public String getPoster() {
+    public String getPoster ()
+    {
         return Poster;
     }
 
-    public void setPoster(String Poster) {
+    public void setPoster (String Poster)
+    {
         this.Poster = Poster;
     }
 
-    public String getImdbID() {
+    public String getImdbID ()
+    {
         return imdbID;
     }
 
-    public void setImdbID(String imdbID) {
+    public void setImdbID (String imdbID)
+    {
         this.imdbID = imdbID;
     }
 
-    public String getCountry() {
+    public String getCountry ()
+    {
         return Country;
     }
 
-    public void setCountry(String Country) {
+    public void setCountry (String Country)
+    {
         this.Country = Country;
     }
 
-    public String getTitle() {
+    public String getBoxOffice ()
+    {
+        return BoxOffice;
+    }
+
+    public void setBoxOffice (String BoxOffice)
+    {
+        this.BoxOffice = BoxOffice;
+    }
+
+    public String getTitle ()
+    {
         return Title;
     }
 
-    public void setTitle(String Title) {
+    public void setTitle (String Title)
+    {
         this.Title = Title;
     }
 
-    public String getImdbRating() {
+    public String getDVD ()
+    {
+        return DVD;
+    }
+
+    public void setDVD (String DVD)
+    {
+        this.DVD = DVD;
+    }
+
+    public String getImdbRating ()
+    {
         return imdbRating;
     }
 
-    public void setImdbRating(String imdbRating) {
+    public void setImdbRating (String imdbRating)
+    {
         this.imdbRating = imdbRating;
     }
 
-    public String getYear() {
+    public String getYear ()
+    {
         return Year;
     }
 
-    public void setYear(String Year) {
+    public void setYear (String Year)
+    {
         this.Year = Year;
     }
 
-    public String getRated() {
+    public String getRated ()
+    {
         return Rated;
     }
 
-    public void setRated(String Rated) {
+    public void setRated (String Rated)
+    {
         this.Rated = Rated;
     }
 
-    public String getActors() {
+    public String getActors ()
+    {
         return Actors;
     }
 
-    public void setActors(String Actors) {
+    public void setActors (String Actors)
+    {
         this.Actors = Actors;
     }
 
-    public String getPlot() {
+    public String getPlot ()
+    {
         return Plot;
     }
 
-    public void setPlot(String Plot) {
+    public void setPlot (String Plot)
+    {
         this.Plot = Plot;
     }
 
-    public String getMetascore() {
+    public String getMetascore ()
+    {
         return Metascore;
     }
 
-    public void setMetascore(String Metascore) {
+    public void setMetascore (String Metascore)
+    {
         this.Metascore = Metascore;
     }
 
-    public String getWriter() {
+    public String getWriter ()
+    {
         return Writer;
     }
 
-    public void setWriter(String Writer) {
+    public void setWriter (String Writer)
+    {
         this.Writer = Writer;
     }
 
-    public String getGenre() {
+    public String getProduction ()
+    {
+        return Production;
+    }
+
+    public void setProduction (String Production)
+    {
+        this.Production = Production;
+    }
+
+    public String getGenre ()
+    {
         return Genre;
     }
 
-    public void setGenre(String Genre) {
+    public void setGenre (String Genre)
+    {
         this.Genre = Genre;
     }
 
-    public String getLanguage() {
+    public String getLanguage ()
+    {
         return Language;
     }
 
-    public void setLanguage(String Language) {
+    public void setLanguage (String Language)
+    {
         this.Language = Language;
     }
 
-    public String getAwards() {
+    public String getAwards ()
+    {
         return Awards;
     }
 
-    public void setAwards(String Awards) {
+    public void setAwards (String Awards)
+    {
         this.Awards = Awards;
     }
 
-    public String getDirector() {
+    public String getDirector ()
+    {
         return Director;
     }
 
-    public void setDirector(String Director) {
+    public void setDirector (String Director)
+    {
         this.Director = Director;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "ClassPojo [Released = "+Released+", Website = "+Website+", Type = "+Type+", imdbVotes = "+imdbVotes+", Ratings = "+Ratings+", Runtime = "+Runtime+", Response = "+Response+", Poster = "+Poster+", imdbID = "+imdbID+", Country = "+Country+", BoxOffice = "+BoxOffice+", Title = "+Title+", DVD = "+DVD+", imdbRating = "+imdbRating+", Year = "+Year+", Rated = "+Rated+", Actors = "+Actors+", Plot = "+Plot+", Metascore = "+Metascore+", Writer = "+Writer+", Production = "+Production+", Genre = "+Genre+", Language = "+Language+", Awards = "+Awards+", Director = "+Director+"]";
     }
 }
